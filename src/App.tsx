@@ -160,34 +160,6 @@ function App() {
               </div>
             </div>
 
-            <div className="flex items-start gap-4 text-left p-4 bg-white/50 rounded-xl">
-              <Sparkles className="w-8 h-8 text-pink-500 flex-shrink-0 mt-1" />
-              <div>
-                <h4 className="font-semibold text-pink-600 text-lg">
-                  Unconditional Love
-                </h4>
-                <p className="text-gray-700">
-                  For being both mother and father, filling Arika's life with
-                  enough love for a lifetime, nurturing her into the beautiful
-                  princess she is becoming.
-                </p>
-              </div>
-            </div>
-
-            <div className="flex items-start gap-4 text-left p-4 bg-white/50 rounded-xl">
-              <Star className="w-8 h-8 text-yellow-500 flex-shrink-0 mt-1" />
-              <div>
-                <h4 className="font-semibold text-yellow-600 text-lg center">
-                  Inspiration
-                </h4>
-                <p className="text-gray-700">
-                  For showing grace under pressure, demonstrating that true
-                  beauty comes from within, and being a daily inspiration to all
-                  who know you.
-                </p>
-              </div>
-            </div>
-
             <div className="flex items-start gap-3 md:gap-4 text-left p-3 sm:p-4 bg-white/50 rounded-xl hover:bg-white/70 transition-colors transform hover:scale-102 duration-300">
               <Sparkles className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 text-pink-500 flex-shrink-0 mt-1" />
               <div className="flex-1">
@@ -216,13 +188,27 @@ function App() {
               </div>
             </div>
 
-            <div className="flex items-start gap-3 md:gap-4 text-left p-3 sm:p-4 bg-white/50 rounded-xl hover:bg-white/70 transition-colors">
-              <Heart className="w-6 h-6 md:w-8 md:h-8 text-red-800 flex-shrink-0 mt-1" />
-              <div>
-                <h4 className="font-semibold text-pink-600 text-base md:text-lg text-center">
+            <div className="flex items-start gap-3 md:gap-4 text-left p-3 sm:p-4 bg-white/50 rounded-xl hover:bg-white/70 transition-colors transform hover:scale-102 duration-300">
+              <Star className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 text-yellow-500 flex-shrink-0 mt-1" />
+              <div className="flex-1">
+                <h4 className="font-semibold text-yellow-600 text-base sm:text-lg md:text-xl mb-1 sm:mb-2">
+                  Inspiration
+                </h4>
+                <p className="text-sm sm:text-base md:text-lg text-gray-700 leading-relaxed">
+                  For showing grace under pressure, demonstrating that true
+                  beauty comes from within, and being a daily inspiration to all
+                  who know you.
+                </p>
+              </div>
+            </div>
+
+            <div className="flex items-start gap-3 md:gap-4 text-left p-3 sm:p-4 bg-white/50 rounded-xl hover:bg-white/70 transition-colors transform hover:scale-102 duration-300">
+              <Heart className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 text-red-800 flex-shrink-0 mt-1" />
+              <div className="flex-1">
+                <h4 className="font-semibold text-pink-600 text-base sm:text-lg md:text-xl mb-1 sm:mb-2 text-center">
                   BhanuPriyanka
                 </h4>
-                <p className="text-sm md:text-base text-gray-700">
+                <p className="text-sm sm:text-base md:text-lg text-gray-700 leading-relaxed tracking-wide">
                   "To the world you may be one person, but to Arika you are the
                   world. Your love, strength, and dedication are creating a
                   lifetime of beautiful memories." ❀ ❀ ❀
