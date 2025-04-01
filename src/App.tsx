@@ -1,11 +1,26 @@
 import React from 'react';
-import { Moon as Balloon, Cake, Gift, Heart, Music, PartyPopper, Stars, Crown, Shield, Sparkles, Star, Square } from 'lucide-react';
+import {
+  Moon as Balloon,
+  Cake,
+  Gift,
+  Heart,
+  Music,
+  PartyPopper,
+  Stars,
+  Crown,
+  Shield,
+  Sparkles,
+  Star,
+  Square,
+  Power,
+  AlignCenter,
+} from "lucide-react";
 
 function App() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-pink-100 to-purple-100 flex flex-col items-center justify-center relative overflow-hidden">
       {/* Background Image */}
-      <div 
+      <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20"
         style={{
           backgroundImage: 'url("/arika-sketch.jpg")',
@@ -17,10 +32,12 @@ function App() {
         {[...Array(20)].map((_, i) => (
           <div
             key={i}
-            className={`absolute ${i % 2 === 0 ? 'animate-shower' : 'animate-shower-slow'}`}
+            className={`absolute ${
+              i % 2 === 0 ? "animate-shower" : "animate-shower-slow"
+            }`}
             style={{
-              left: `${(i * 5) + Math.random() * 5}%`,
-              animationDelay: `${Math.random() * 8}s`
+              left: `${i * 5 + Math.random() * 5}%`,
+              animationDelay: `${Math.random() * 8}s`,
             }}
           >
             {i % 3 === 0 ? (
@@ -82,7 +99,7 @@ function App() {
           Princess Arika
           <Crown className="w-8 h-8 text-yellow-500" />
         </h1>
-        
+
         <h2 className="text-3xl md:text-4xl font-bold mb-4 text-purple-500">
           Happy 2nd Birthday!
         </h2>
@@ -94,7 +111,7 @@ function App() {
         </div>
 
         <p className="text-xl md:text-2xl text-gray-700 mb-6">
-          Today is your special day! 
+          Today is your special day!
           <br />
           Time to celebrate with cake and play!
         </p>
@@ -118,37 +135,73 @@ function App() {
         <div className="mt-8 bg-gradient-to-r from-pink-50 to-purple-50 p-6 rounded-2xl border border-pink-200">
           <h3 className="text-2xl font-bold text-purple-600 mb-4 flex items-center justify-center gap-2">
             <Crown className="w-6 h-6 text-yellow-500" />
-            A Special Tribute to Mom
+            A Special Tribute to Mother of Princess Arika
             <Crown className="w-6 h-6 text-yellow-500" />
           </h3>
           <Heart className="w-6 h-6 text-red-400 mx-auto mb-2" />
           <p className="text-gray-700 leading-relaxed mb-8 text-lg italic">
-            Behind every princess is a queen who leads with love, strength, and grace. Today, as we celebrate Arika's special day, we also honor her incredible mother.
+            Behind every princess is a queen who leads with love, strength, and
+            grace. Today, as we celebrate Arika's special day, we also honor her
+            incredible mother.
           </p>
 
           {/* Three tributes */}
           <div className="space-y-6">
             <div className="flex items-start gap-4 text-left p-4 bg-white/50 rounded-xl">
-              <Shield className="w-8 h-8 text-purple-500 flex-shrink-0 mt-1" />
+              <Shield className="w-8 h-8 text-yellow-500 flex-shrink-0 mt-1" />
               <div>
-                <h4 className="font-semibold text-purple-600 text-lg">Courage</h4>
-                <p className="text-gray-700">For facing every challenge with remarkable strength and determination, showing Arika what true resilience looks like.</p>
+                <h4 className="font-semibold text-purple-600 text-lg">
+                  Courage
+                </h4>
+                <p className="text-gray-700">
+                  For facing every challenge with remarkable strength and
+                  determination, showing Arika what true resilience looks like.
+                </p>
               </div>
             </div>
 
             <div className="flex items-start gap-4 text-left p-4 bg-white/50 rounded-xl">
               <Sparkles className="w-8 h-8 text-pink-500 flex-shrink-0 mt-1" />
               <div>
-                <h4 className="font-semibold text-pink-600 text-lg">Unconditional Love</h4>
-                <p className="text-gray-700">For being both mother and father, filling Arika's life with enough love for a lifetime, nurturing her into the beautiful princess she is becoming.</p>
+                <h4 className="font-semibold text-pink-600 text-lg">
+                  Unconditional Love
+                </h4>
+                <p className="text-gray-700">
+                  For being both mother and father, filling Arika's life with
+                  enough love for a lifetime, nurturing her into the beautiful
+                  princess she is becoming.
+                </p>
               </div>
             </div>
 
             <div className="flex items-start gap-4 text-left p-4 bg-white/50 rounded-xl">
               <Star className="w-8 h-8 text-yellow-500 flex-shrink-0 mt-1" />
               <div>
-                <h4 className="font-semibold text-yellow-600 text-lg">Inspiration</h4>
-                <p className="text-gray-700">For showing grace under pressure, demonstrating that true beauty comes from within, and being a daily inspiration to all who know you.</p>
+                <h4 className="font-semibold text-yellow-600 text-lg center">
+                  Inspiration
+                </h4>
+                <p className="text-gray-700">
+                  For showing grace under pressure, demonstrating that true
+                  beauty comes from within, and being a daily inspiration to all
+                  who know you.
+                </p>
+              </div>
+            </div>
+
+            <div className="flex items-start gap-4 text-left p-4 bg-white/50 rounded-xl">
+              <Heart className="w-8 h-8 text-red-800 flex-shrink-0 mt-1" />
+              <div>
+                <h4
+                  className="font-semibold text-pink-600 text-lg"
+                  style={{ textAlign: "center" }}
+                >
+                  BhanuPriyanka
+                </h4>
+                <p className="text-gray-700">
+                  "To the world you may be one person, but to Arika you are the
+                  world. Your love, strength, and dedication are creating a
+                  lifetime of beautiful memories." ❀ ❀ ❀
+                </p>
               </div>
             </div>
           </div>
