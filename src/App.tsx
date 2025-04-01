@@ -93,7 +93,7 @@ function App() {
       </div>
 
       {/* Main content */}
-      <div className="text-center z-10 bg-white/80 p-8 rounded-3xl shadow-xl backdrop-blur-sm max-w-2xl mx-4">
+      <div className="text-center z-10 bg-white/80 p-4 sm:p-6 md:p-8 rounded-3xl shadow-xl backdrop-blur-sm max-w-2xl mx-2 sm:mx-4 my-4 sm:my-6">
         <h1 className="text-4xl md:text-5xl font-bold mb-2 text-pink-500 flex items-center justify-center gap-3">
           <Crown className="w-8 h-8 text-yellow-500" />
           Princess Arika
@@ -132,22 +132,22 @@ function App() {
         </div>
 
         {/* Mother's Tribute */}
-        <div className="mt-8 bg-gradient-to-r from-pink-50 to-purple-50 p-4 md:p-6 rounded-2xl border border-pink-200 shadow-inner">
-          <h3 className="text-xl md:text-2xl font-bold text-purple-600 mb-4 flex items-center justify-center gap-2 flex-wrap">
+        <div className="mt-6 md:mt-8 bg-gradient-to-r from-pink-50 to-purple-50 p-3 sm:p-4 md:p-6 rounded-2xl border border-pink-200 shadow-inner">
+          <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-purple-600 mb-3 md:mb-4 flex items-center justify-center gap-2 flex-wrap px-2">
             <Crown className="w-5 h-5 md:w-6 md:h-6 text-yellow-500" />
             A Special Tribute to Mother of Princess Arika
             <Crown className="w-5 h-5 md:w-6 md:h-6 text-yellow-500" />
           </h3>
           <Heart className="w-5 h-5 md:w-6 md:h-6 text-red-400 mx-auto mb-2" />
-          <p className="text-sm md:text-lg text-gray-700 leading-relaxed mb-6 md:mb-8 italic">
+          <p className="text-sm sm:text-base md:text-lg text-gray-700 leading-relaxed mb-4 sm:mb-6 md:mb-8 italic px-2">
             Behind every princess is a queen who leads with love, strength, and
             grace. Today, as we celebrate Arika's special day, we also honor her
             incredible mother.
           </p>
 
-          {/* Three tributes */}
-          <div className="space-y-4 md:space-y-6">
-            <div className="flex items-start gap-3 md:gap-4 text-left p-3 md:p-4 bg-white/50 rounded-xl hover:bg-white/70 transition-colors">
+          {/* Tribute cards */}
+          <div className="space-y-3 sm:space-y-4 md:space-y-6">
+            <div className="flex items-start gap-3 md:gap-4 text-left p-3 sm:p-4 bg-white/50 rounded-xl hover:bg-white/70 transition-colors">
               <Shield className="w-6 h-6 md:w-8 md:h-8 text-yellow-500 flex-shrink-0 mt-1" />
               <div>
                 <h4 className="font-semibold text-purple-600 text-base md:text-lg">
@@ -188,7 +188,35 @@ function App() {
               </div>
             </div>
 
-            <div className="flex items-start gap-3 md:gap-4 text-left p-3 md:p-4 bg-white/50 rounded-xl hover:bg-white/70 transition-colors">
+            <div className="flex items-start gap-3 md:gap-4 text-left p-3 sm:p-4 bg-white/50 rounded-xl hover:bg-white/70 transition-colors transform hover:scale-102 duration-300">
+              <Sparkles className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 text-pink-500 flex-shrink-0 mt-1" />
+              <div className="flex-1">
+                <h4 className="font-semibold text-pink-600 text-base sm:text-lg md:text-xl mb-1 sm:mb-2">
+                  Unconditional Love
+                </h4>
+                <p className="text-sm sm:text-base md:text-lg text-gray-700 leading-relaxed">
+                  For being both mother and father, filling Arika's life with
+                  enough love for a lifetime, nurturing her into the beautiful
+                  princess she is becoming.
+                </p>
+              </div>
+            </div>
+
+            <div className="flex items-start gap-4 text-left p-4 bg-white/50 rounded-xl">
+              <Star className="w-8 h-8 text-yellow-500 flex-shrink-0 mt-1" />
+              <div>
+                <h4 className="font-semibold text-yellow-600 text-lg center">
+                  Inspiration
+                </h4>
+                <p className="text-gray-700">
+                  For showing grace under pressure, demonstrating that true
+                  beauty comes from within, and being a daily inspiration to all
+                  who know you.
+                </p>
+              </div>
+            </div>
+
+            <div className="flex items-start gap-3 md:gap-4 text-left p-3 sm:p-4 bg-white/50 rounded-xl hover:bg-white/70 transition-colors">
               <Heart className="w-6 h-6 md:w-8 md:h-8 text-red-800 flex-shrink-0 mt-1" />
               <div>
                 <h4 className="font-semibold text-pink-600 text-base md:text-lg text-center">
