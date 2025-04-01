@@ -132,28 +132,28 @@ function App() {
         </div>
 
         {/* Mother's Tribute */}
-        <div className="mt-8 bg-gradient-to-r from-pink-50 to-purple-50 p-6 rounded-2xl border border-pink-200">
-          <h3 className="text-2xl font-bold text-purple-600 mb-4 flex items-center justify-center gap-2">
-            <Crown className="w-6 h-6 text-yellow-500" />
+        <div className="mt-8 bg-gradient-to-r from-pink-50 to-purple-50 p-4 md:p-6 rounded-2xl border border-pink-200 shadow-inner">
+          <h3 className="text-xl md:text-2xl font-bold text-purple-600 mb-4 flex items-center justify-center gap-2 flex-wrap">
+            <Crown className="w-5 h-5 md:w-6 md:h-6 text-yellow-500" />
             A Special Tribute to Mother of Princess Arika
-            <Crown className="w-6 h-6 text-yellow-500" />
+            <Crown className="w-5 h-5 md:w-6 md:h-6 text-yellow-500" />
           </h3>
-          <Heart className="w-6 h-6 text-red-400 mx-auto mb-2" />
-          <p className="text-gray-700 leading-relaxed mb-8 text-lg italic">
+          <Heart className="w-5 h-5 md:w-6 md:h-6 text-red-400 mx-auto mb-2" />
+          <p className="text-sm md:text-lg text-gray-700 leading-relaxed mb-6 md:mb-8 italic">
             Behind every princess is a queen who leads with love, strength, and
             grace. Today, as we celebrate Arika's special day, we also honor her
             incredible mother.
           </p>
 
           {/* Three tributes */}
-          <div className="space-y-6">
-            <div className="flex items-start gap-4 text-left p-4 bg-white/50 rounded-xl">
-              <Shield className="w-8 h-8 text-yellow-500 flex-shrink-0 mt-1" />
+          <div className="space-y-4 md:space-y-6">
+            <div className="flex items-start gap-3 md:gap-4 text-left p-3 md:p-4 bg-white/50 rounded-xl hover:bg-white/70 transition-colors">
+              <Shield className="w-6 h-6 md:w-8 md:h-8 text-yellow-500 flex-shrink-0 mt-1" />
               <div>
-                <h4 className="font-semibold text-purple-600 text-lg">
+                <h4 className="font-semibold text-purple-600 text-base md:text-lg">
                   Courage
                 </h4>
-                <p className="text-gray-700">
+                <p className="text-sm md:text-base text-gray-700">
                   For facing every challenge with remarkable strength and
                   determination, showing Arika what true resilience looks like.
                 </p>
@@ -188,16 +188,13 @@ function App() {
               </div>
             </div>
 
-            <div className="flex items-start gap-4 text-left p-4 bg-white/50 rounded-xl">
-              <Heart className="w-8 h-8 text-red-800 flex-shrink-0 mt-1" />
+            <div className="flex items-start gap-3 md:gap-4 text-left p-3 md:p-4 bg-white/50 rounded-xl hover:bg-white/70 transition-colors">
+              <Heart className="w-6 h-6 md:w-8 md:h-8 text-red-800 flex-shrink-0 mt-1" />
               <div>
-                <h4
-                  className="font-semibold text-pink-600 text-lg"
-                  style={{ textAlign: "center" }}
-                >
+                <h4 className="font-semibold text-pink-600 text-base md:text-lg text-center">
                   BhanuPriyanka
                 </h4>
-                <p className="text-gray-700">
+                <p className="text-sm md:text-base text-gray-700">
                   "To the world you may be one person, but to Arika you are the
                   world. Your love, strength, and dedication are creating a
                   lifetime of beautiful memories." ❀ ❀ ❀
